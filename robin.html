@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+        <title>OPECA robin</title>
+        <script src="robin.js" defer></script>
+	<link rel="stylesheet" href="robin.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+	<link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d018dda636.js" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$(" .hamburger__inner").click(function(){
+			  $(".wrapper").toggleClass("active")
+			})
+
+		 
+		})
+	</script>
+</head>
+<body>
+  <!-- homepage -->
+  <div style=" background-color: #F7FBFD;" class="gupta"><img src="bg3.jpg" alt="" ></div>
+  
+  <p class="head1">Round Robin</p>  
+  <p class="head2">Sechduling Algorithm</p> 
+  <img  class="vis" src="rob.png" alt="" height="300px">
+     
+    
+ <!-- menu bar start-->
+ <img style="width: 100%;" src="">
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="hamburger__inner">
+        <i style=" font-size: 2vw;" class="fa-solid fa-bars"></i>
+          
+       </div>
+    </div>
+    <div class="menu">
+      <div class="logo">OPE<span class="logo_name">CA</span></div>
+         
+       
+      <div class="right_menu">
+        <ul>
+          <li> 
+            <nav class="navbar">
+            <a class="vishal" href="index.html#home"><i  class="fa-solid fa-house-chimney"></i></a> 
+            <a  href="index.html#about"><i class="fa-solid fa-address-card"></i></a>
+            <a  href="index.html#team"><i class="fa-solid fa-people-group"></i></a>
+            <a  href="index.html#contact"><i class="fa-solid fa-phone"></i></a></nav>
+            <div class="profile_dd">
+               
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+  <div class="main_container">
+      <div class="sidebar">
+          <div class="sidebar__inner">
+            <div class="profile">
+             
+            </div>
+            <ul>
+              <li>
+                <a href="fcfs.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">FCFS</span>
+                </a>
+              </li>
+              <li>
+                <a href="sjf.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">SJF</span>
+                </a>
+              </li>
+              <li>
+                <a href="priority.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">Priority</span>
+                </a>
+              </li>
+              <li>
+                <a href="robin.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">Round Robin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+<!-- content section start -->
+      <p style="text-style:normal;" class="head"><span class="logo_name">Definition</span></p>
+      <section class="about" id="about">
+      
+        <div class="about-left">
+          <P class="about-small-head"><b>Question: What is Round Robin CPU Sechduling Algorithm?</b></h1>
+          <P>
+          <p class="about-content"> <b>Answer: </b> A round-robin scheduling algorithm is used to schedule the process fairly for each job a time slot or quantum and the
+          interrupting the job if it is not completed by then the job come after the other job which is arrived in the quantum
+          time that makes these scheduling fairly.
+          Note:
+          Round-robin is cyclic in nature, so starvation doesn’t occur.
+          Round-robin is a variant of first come, first served scheduling.
+          No priority, special importance is given to any process or task.
+          RR scheduling is also known as Time slicing scheduling.
+            </br></br> <b> Example: we have three processes P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> their burst time
+              are 5, 4, 2 and arrival time are 0, 1, 2</b> </br>
+      
+      
+        </div>
+      
+      
+        <div class="about-right">
+          <img class="about-image" src="rrab.png" alt="" width=600px height="500px">
+      
+        </div>
+      </section>
+       <!-- soloution section start -->
+       <section id="solution"> 
+        <p class="head">Solve Round Robin</p>
+  
+        <p class="texts">Enter the number of process:-</p>
+        <div class='bg'>
+             <input id="p1" type="value" class='textarea' name='UserId' /></div>
+        <p class="texts">Enter the time quantum:-</p>
+        <input id="q1" type="value" class='textarea' name='UserId' />
+        <button class="but" id="pro" onclick="createtable()">Enter</button> 
+       <p class="texts">Enter the value of burst time and arrival time in below table:-</p>
+       <div class="ta" > 
+         <table id="my">
+          <tr class="vish">
+            <td>process</td>
+            <td>Arrival time</td>
+            <td>Burst time</td>
+            <td>waiting time</td>
+            <td>turn around time</td>
+      </tr> 
+      <tr  >
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr></div>
+    </table>
+    <button class="answer" onclick="robin()">Answer</button>   
+      <p class="avw">Average waiting time is:-</p>
+       <input class="textareaans" readonly="readonly" id="avgwt">
+      <p class="avw">Average turnaround time is:-</p>
+       <input class="textareaans" readonly="readonly" id="avgtat">  
+        
+  
+    </section>
+        <!-- soloution scetion end --> -->
+<!-- footer section start -->
+      <footer>
+        <div class="final_text"></div>
+        <p class="footer-text">Copyright &copy; All rights reserved
+          <br>OPE<span class="logo_name">CA</span> 2022
+        </p>
+      </footer>
+      <!-- FOOTER SECTION END -->
+  </body>
+  
+  </html>

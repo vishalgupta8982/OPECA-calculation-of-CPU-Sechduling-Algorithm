@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+        <title>OPECA fcfs</title>
+        <script src="fcfs.js" defer></script>
+	<link rel="stylesheet" href="fcfs.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d018dda636.js" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$(" .hamburger__inner").click(function(){
+			  $(".wrapper").toggleClass("active")
+			})
+
+		 
+		})
+	</script>
+</head>
+<body>
+  <!-- homepage -->
+  <div style=" background-color: #F7FBFD;" class="gupta"><img src="bg3.jpg" alt="" ></div>
+  
+    
+
+     <p class="head1">FCFS</p>  
+     <p class="head2">FIRST COME FIRST SERVE</p> 
+     <img  class="vis" src="fs.png" alt="">
+    
+ <!-- menu bar start-->
+ <img style="width: 100%;" src="">
+<div class="wrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="hamburger__inner">
+        <i style=" font-size: 2vw;" class="fa-solid fa-bars"></i>
+          
+       </div>
+    </div>
+    <div class="menu">
+      <div class="logo">OPE<span class="logo_name">CA</span></div>
+         
+       
+      <div class="right_menu">
+        <ul>
+          <li> 
+            <nav class="navbar">
+            <a class="vishal" href="index.html#home"><i  class="fa-solid fa-house-chimney"></i></a> 
+            <a  href="index.html#about"><i class="fa-solid fa-address-card"></i></a>
+            <a  href="index.html#team"><i class="fa-solid fa-people-group"></i></a>
+            <a  href="index.html#contact"><i class="fa-solid fa-phone"></i></a></nav>
+            <div class="profile_dd">
+               
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    
+  <div class="main_container">
+      <div class="sidebar">
+          <div class="sidebar__inner">
+            <div class="profile">
+             
+            </div>
+            <ul>
+              <li>
+                <a href="fcfs.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">FCFS</span>
+                </a>
+              </li>
+              <li>
+                <a href="sjf.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">SJF</span>
+                </a>
+              </li>
+              <li>
+                <a href="priority.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">Priority</span>
+                </a>
+              </li>
+              <li>
+                <a href="robin.html">
+                  <span class="icon"> </i></span>
+                  <span class="title">Round Robin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <!-- front page end -->
+<!-- content section start -->
+<p style="text-style:normal;" class="head"><span class="logo_name">Definition</span></p>
+<section class="about" id="about">
+     
+  <div class="about-left"> <P class="about-small-head"><b>Question: What is FCFS CPU Sechduling Algorithm?</b></h1><P>
+    <p class="about-content"> <b>Answer: </b>In <span class="logo_name">first come,first out(FCFS) algorithm</span>, the process that request the CPU first is allocated the CPU first. The implementation of the FCFS is easily managed with a FIFO(first in first out) queue. When a process enters the ready queue, PCB is linked onto the tail of the queue. When the CPU is free, it is allocated to the process at the head of the queue. The running process is then removed from the queue. And, this how FCFS works.
+    </br></br>  <b> Example: we have three processes P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub> their burst time are 24, 3, 3</b> </br>
+      
+   
+     </div>
+   
+         
+        <div class="about-right">
+          <img class="about-image" src="fceg.png" alt="" width=600px height="500px">
+    
+          </div> </section>
+       
+
+      <!-- soloution section start -->
+      <section id="solution"> 
+        <p class="head">SOLVE FCFS</p>
+        <p class="texts">Enter the number of process:-</p>
+      <div class='bg'>
+         
+          <input id="p1" type="value" class='textarea' name='UserId' />
+      <button class="but" id="pro" onclick="createtable()">Enter</button></div>
+        
+     <p class="texts">Enter the value of burst time in below table:-</p>
+     <div class="ta" > 
+       <table id="my">
+        <tr class="vish">
+        <td>Process</td>
+        <td>Burst time</td>
+        <td>Waiting time</td>
+        <td>Turn around time</td>
+    </tr> 
+    <tr  >
+      
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr></div>
+  </table>
+  <button class="answer" onclick="fcfs()">Answer</button>   
+    <p class="avw">Average waiting time is:-</p>
+     <input class="textareaans" readonly="readonly" id="avgwt">
+    <p class="avw">Average turnaround time is:-</p>
+     <input class="textareaans" readonly="readonly" id="avgtat">  
+      </br>  </br>
+    </br>   
+
+  </section>
+      <!-- soloution scetion end --> 
+<!--   footer section start -->
+   <footer>
+        <div class="final_text"></div>
+        <p class="footer-text">Copyright &copy; All rights reserved
+          <br>OPE<span class="logo_name">CA</span> 2022
+        </p>
+      </footer> -->
+      <!-- FOOTER SECTION END -->
+  </body>
+  
+  </html>
